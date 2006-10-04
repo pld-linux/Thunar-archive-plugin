@@ -2,7 +2,7 @@
 %define		srcname thunar-archive-plugin
 #
 Summary:	Archive plugin for the Thunar file manager
-Summary(pl):	Wtyczka archiwum dla menad¿era plików Thunar
+Summary(pl):	Wtyczka archiwum dla zarz±dcy plików Thunar
 Name:		Thunar-archive-plugin
 Version:	0.2.0
 Release:	1
@@ -17,8 +17,8 @@ BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.311
-Requires:	Thunar >= 0.2.2
 Requires(post,postun):	hicolor-icon-theme
+Requires:	Thunar >= 0.2.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,8 +28,8 @@ scripting interface for archive managers.
 
 %description -l pl
 Ta wtyczka umo¿liwia tworzenie i rozpakowywanie archiwów u¿ywaj±c menu
-podrêcznego pliku w menad¿erze plików Thunar. Dostarcza ogólny
-interfejs dla zarz±dców archiwów.
+podrêcznego pliku w zarz±dcy plików Thunar. Dostarcza ogólny interfejs
+dla zarz±dców archiwów.
 
 %prep
 %setup -q -n %{srcname}-%{version}
