@@ -2,7 +2,7 @@
 %define		srcname thunar-archive-plugin
 #
 Summary:	Archive plugin for the Thunar file manager
-Summary(pl.UTF-8):   Wtyczka archiwum dla zarządcy plików Thunar
+Summary(pl.UTF-8):	Wtyczka archiwum dla zarządcy plików Thunar
 Name:		Thunar-archive-plugin
 Version:	0.2.4
 Release:	1
