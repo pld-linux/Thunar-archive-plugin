@@ -5,7 +5,7 @@ Summary:	Archive plugin for the Thunar file manager
 Summary(pl.UTF-8):	Wtyczka archiwum dla zarządcy plików Thunar
 Name:		Thunar-archive-plugin
 Version:	0.2.4
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://download.berlios.de/xfce-goodies/%{srcname}-%{version}.tar.bz2
@@ -18,7 +18,7 @@ BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.311
 BuildRequires:	xfce4-dev-tools >= 4.4.0
-Requires(post,postun):	gtk+2
+Requires(post,postun):	gtk-update-icon-cache
 Requires(post,postun):	hicolor-icon-theme
 Requires:	Thunar >= 0.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
