@@ -5,7 +5,7 @@ Summary:	Archive plugin for the Thunar file manager
 Summary(pl.UTF-8):	Wtyczka archiwum dla zarządcy plików Thunar
 Name:		Thunar-archive-plugin
 Version:	0.4.0
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://archive.xfce.org/src/thunar-plugins/thunar-archive-plugin/0.4/%{srcname}-%{version}.tar.bz2
@@ -58,6 +58,8 @@ rm -rf $RPM_BUILD_ROOT
 
 # duplicate of ur
 %{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/ur_PK
+
+%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/uz@Latn
 
 %find_lang %{srcname}
 
