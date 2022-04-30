@@ -4,12 +4,12 @@
 Summary:	Archive plugin for the Thunar file manager
 Summary(pl.UTF-8):	Wtyczka archiwum dla zarządcy plików Thunar
 Name:		Thunar-archive-plugin
-Version:	0.4.0
-Release:	4
+Version:	0.5.0
+Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://archive.xfce.org/src/thunar-plugins/thunar-archive-plugin/0.4/%{srcname}-%{version}.tar.bz2
-# Source0-md5:	0a7738a3a5f84bf218ece3ffb5241c63
+Source0:	http://archive.xfce.org/src/thunar-plugins/thunar-archive-plugin/0.5/%{srcname}-%{version}.tar.bz2
+# Source0-md5:	4d3c23fb89bb586bc208bf08663e0cbc
 URL:		http://foo-projects.org/~benny/projects/thunar-archive-plugin/
 BuildRequires:	Thunar-devel >= 1.8.0
 BuildRequires:	autoconf >= 2.50
@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 # duplicate of ur
 %{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/ur_PK
 
-%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/uz@Latn
+%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/{hy_AM,hye,hye_RU,ie,uz@Latn}
 
 %find_lang %{srcname}
 
@@ -74,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{srcname}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README THANKS scripts/template.tap
+%doc AUTHORS ChangeLog NEWS THANKS scripts/template.tap
 %attr(755,root,root) %{_libdir}/thunarx-3/thunar-archive-plugin.so
 %dir %{_libexecdir}/thunar-archive-plugin
 %attr(755,root,root) %{_libexecdir}/thunar-archive-plugin/*.tap
