@@ -4,16 +4,19 @@
 Summary:	Archive plugin for the Thunar file manager
 Summary(pl.UTF-8):	Wtyczka archiwum dla zarządcy plików Thunar
 Name:		Thunar-archive-plugin
-Version:	0.5.0
+Version:	0.5.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://archive.xfce.org/src/thunar-plugins/thunar-archive-plugin/0.5/%{srcname}-%{version}.tar.bz2
-# Source0-md5:	4d3c23fb89bb586bc208bf08663e0cbc
-URL:		http://foo-projects.org/~benny/projects/thunar-archive-plugin/
+Source0:	https://archive.xfce.org/src/thunar-plugins/thunar-archive-plugin/0.5/%{srcname}-%{version}.tar.bz2
+# Source0-md5:	7236c43a81ba39d2a5af47ef3fea74a6
+URL:		https://foo-projects.org/~benny/projects/thunar-archive-plugin/
 BuildRequires:	Thunar-devel >= 1.8.0
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1:1.8
+BuildRequires:	exo-devel >= 0.10.0
+BuildRequires:	glib2-devel >= 1:2.50.0
+BuildRequires:	gtk+3-devel >= 3.22.0
 BuildRequires:	libtool
 BuildRequires:	libxfce4util-devel >= 4.12.0
 BuildRequires:	pkgconfig
@@ -57,9 +60,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/thunarx-3/*.la
 
 # duplicate of ur
-%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/ur_PK
+%{__rm} -r $RPM_BUILD_ROOT%{_localedir}/ur_PK
 
-%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/{hy_AM,hye,hye_RU,ie,uz@Latn}
+%{__rm} -r $RPM_BUILD_ROOT%{_localedir}/{fa_IR,hy_AM,hye,hye_RU,ie,uz@Latn}
 
 %find_lang %{srcname}
 
